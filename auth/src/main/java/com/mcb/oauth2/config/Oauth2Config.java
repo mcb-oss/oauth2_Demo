@@ -89,7 +89,7 @@ public class Oauth2Config extends AuthorizationServerConfigurerAdapter {
                 //刷新令牌时效
                 .refreshTokenValiditySeconds(FREFRESH_TOKEN_VALIDITY_SECONDS)
                 //允许授权的类型，字符段固定 (添加REFRESH_TOKEN发放令牌时会返回刷新令牌)
-                .authorizedGrantTypes(AUTHORIZATION_CODE,REFRESH_TOKEN);
+                .authorizedGrantTypes(AUTHORIZATION_CODE);
     }
 
     /**

@@ -1,6 +1,5 @@
 package com.mcb.config;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
@@ -11,7 +10,6 @@ import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
  * @Date: 2021/11/28 18:32
  * @Description:
  */
-@Configuration
 public class Oauth2ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
     //授权服务器验证开发端点
